@@ -11,39 +11,6 @@ a{
 li{
     display: inline-block;
 }
-/* -----boostrap---------- */
-/* .navbar-collapse{
-    flex-grow: 0;
-}
-@media (max-width: 767px) {
-    .collapse{
-      min-height: 100vh;
-      background-color: #E4EFF1;
-      
-    }} */
-
-
-
-/* .carousel-caption{
-    
-} */
-/* .carousel-indicators {
-    justify-content: right;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-} */
-/* .carousel-item img{
-    height: 100vh;
-} */
-
-
-    /* .col-lg-4{
-      text-align: center;
-    } */
 
 
 /* -----------hearder----------- */
@@ -143,10 +110,11 @@ box-shadow: none;
 
 /* --------SOMOS--------------SOMOS--------------------SOMOS----------SOMOS---- */
 
+
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    height: 100vh;
 }
 .grid-img{
     background-image: url(../assets/images/casco-100.jpg);
@@ -155,11 +123,12 @@ box-shadow: none;
     background-size: cover;
     grid-column: 1;
     width: 100%;
-    height: 100%;
+    height: inherit;
 
 }
 .grid-text{
     padding: 130px 47px;
+    height: inherit;
  
 }
 
@@ -201,9 +170,56 @@ box-shadow: none;
     background-size: cover;
 } }
 
+/* ------CONTACTO-------CONTACTO---------CONTACTO------------CONTACTO ------- */
+.container-contacto{
+   display: grid;
+    height: 100vh;
+    padding: 0 300px 100px;
+    align-content: center;
+}
+.container-contacto h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.content-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.none{
+    border: none;
+    
+}
+.none:focus-visible{
+    border: none;
+    
+}
 
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 56%;
+}
+.b-b{
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+.p-m{
+padding: 20px 0 100px;
+}
+.form textarea{
+    width: 56%;
+}
+.logo-contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.derecha-contacto{
 
+}
 /* ------footer------ */
 footer{
     display: flex;
@@ -211,6 +227,7 @@ footer{
     height: 75px;
     color: white;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+   
 }
 
