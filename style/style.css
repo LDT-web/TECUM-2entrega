@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a{
@@ -20,7 +21,7 @@ li{
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    background-color: #E4EFF1;
+    background-color: #EFF0F2;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -49,13 +50,10 @@ li{
    font-size: 26px;
    padding-top: 50px;
    font-weight: bolder;
-
-}}
-
-@media (max-width: 767px) {
+}
     .nav-ul{
       min-height: 100vh;
-      background-color: #E4EFF1;
+      background-color: #EFF0F2;
     
 }}
 
@@ -63,7 +61,6 @@ li{
 .nav img{
     width: 120px;
     height: 40px;
-    /* margin-left: 80px; */
 }
 .container-fluid button:focus{
 box-shadow: none;
@@ -111,7 +108,7 @@ box-shadow: none;
 /* --------SOMOS--------------SOMOS--------------------SOMOS----------SOMOS---- */
 
 
-.grid{
+.grid-somos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
@@ -144,8 +141,6 @@ box-shadow: none;
     margin-top: 25px;
     background-color: black;
     color: white;
-    /* width: 125px;
-    height: 55px; */
     text-decoration: none;
     padding: 17px  17px;
     font-size: 17px;
@@ -154,72 +149,346 @@ box-shadow: none;
 @media (max-width: 767px) {
     .grid{
       grid-template-columns: 1fr;
-    }}
-@media (max-width: 767px) {
+    }
     .grid-img{
-    height: 0px;
-    
-} }
-
-@media (max-width: 767px) {
+        height: 0px;
+        
+    }
     .grid-text{
     
-    background-image: url(../assets/images/casco-100.jpg);
+        background-image: url(../assets/images/casco-100.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+}
+
+/*-----HACEMOS---------HACEMOS---------HACEMOS--------HACEMOS----*/
+
+
+.container-hacemos {
+    background-image: url(../assets/galeria/hacemos.webp);
+    height: calc(100vh + 200px);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-} }
+     background-size: cover;
+}
+.title-hacemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    
+}
+
+.title-hacemos h2{
+    color:#FFFFFF;
+    font-size: 2.7rem;
+    font-weight: 600;
+    letter-spacing: 1.1rem;
+}
+.box-backg{
+    background-color: #EFF0F2;
+    height: 700px;
+
+}
+.container-boxs{
+    width: calc(100% - 650px);
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: -55px;    
+}
+.box-shadow{
+    padding: 0 15px;
+    width: 380px;
+    height: 500px;
+}
+.box{
+    padding: 60px ;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0,0.07);
+    -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0,0.07); */
+}
+.box img{
+    height: 57px;
+    margin-bottom: 35px;
+}
+.box h2{
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 1399px){
+    .container-boxs{
+        width: calc(100% - 400px);
+    }
+}
+@media(max-width:767px){
+    
+}
+
+
+/* ----PROYECTOS-----PROYECTOS-----PROYECTOS-----PROYECTOS---- */
+.container-proyectos{
+    width: calc(100% - 145px);
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height:1200px;
+ }
+ 
+ .item{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position:relative;
+ }
+
+ .item span{
+    display: block;
+    padding-bottom: 84%;
+ 
+ }
+
+.item span::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1);
+ }
+ .item span:hover::before{
+    transform: scale(1);
+    background-color: #111111b3;
+ }
+ 
+ 
+ 
+ .item:nth-of-type(1){
+    background-image:url("../assets/galeria/S-E-F-min.webp");
+    grid-column: 1/3;
+    grid-row: 1/3;
+ }
+ .item:nth-of-type(2){
+    background-image:url("../assets/galeria/S-E-IZ-min.webp");
+    grid-column: 3/4;
+    grid-row: 1/2;
+ }
+ .item:nth-of-type(3){
+    background-image:url("../assets/galeria/S-E-DC-min.webp");
+    grid-column: 4/5;
+    grid-row: 1/2;
+ }
+ .item:nth-of-type(4){
+    background-image:url("../assets/galeria/L-F-C-min.webp");
+    grid-column: 1/2;
+    grid-row: 3/4;
+ }
+ .item:nth-of-type(5){
+    background-image: url("../assets/galeria/L-F-D-min.webp");
+    grid-column: 2/3;
+    grid-row: 3/4;
+ }
+ .item:nth-of-type(6){
+    background-image:url("../assets/galeria/L-F-F-min.webp");
+    grid-column: 3/5;
+    grid-row: 2/4;
+ }
+ @media (max-width:1200px) {
+    .grid{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(4,1fr);
+       height: 2074px;
+    }
+    .item:nth-of-type(1){
+       grid-column:1/3;
+       grid-row: 1/2;
+    }
+    .item:nth-of-type(2){
+       grid-column: 1/2;
+       grid-row: 2/3;
+    }
+    .item:nth-of-type(3){
+       grid-column: 2/3;
+       grid-row: 2/3;
+    }
+    .item:nth-of-type(4){
+       grid-column: 1/3;
+       grid-row: 3/4;
+    }
+    .item:nth-of-type(5){
+       grid-column: 1/2;
+       grid-row: 4/5;
+    }
+    .item:nth-of-type(6){
+       grid-column: 2/3;
+       grid-row: 4/5;
+    }
+ 
+    .item span{
+       padding-bottom: 80%;
+    }
+ }
+@media (max-width:767px) {
+    .container-proyectos{
+        width: 100%;        
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+  
+     }
+     .item:nth-of-type(1){
+        grid-column: 1;
+        grid-row: 1;
+     }
+     .item:nth-of-type(2){
+        grid-column:1;
+        grid-row:2;
+     }
+     .item:nth-of-type(3){
+        grid-column:1;
+        grid-row: 3;
+     }
+     .item:nth-of-type(4){
+        grid-column:1;
+        grid-row: 4;
+     }
+     .item:nth-of-type(5){
+        grid-column:1;
+        grid-row: 5;
+     }
+     .item:nth-of-type(6){
+        grid-column: 1;
+        grid-row: 6;
+     }
+}
+
 
 /* ------CONTACTO-------CONTACTO---------CONTACTO------------CONTACTO ------- */
 .container-contacto{
-   display: grid;
+   
     height: 100vh;
-    padding: 0 300px 100px;
-    align-content: center;
+    padding: 100px 300px 0px;
+    
+   
 }
 .container-contacto h1{
+
     font-size: 50px;
     font-weight: 600;
 }
-.content-contacto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+.grid-contacto{
+    display: grid;
+    grid-template:1fr/ 1fr 1fr;
+    grid-template-areas: "izquierda derecha";
+    
+
 }
 .none{
     border: none;
+    outline: none;
     
 }
-.none:focus-visible{
-    border: none;
-    
-}
+
+
 
 .form{
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 56%;
+    
 }
 .b-b{
     border-bottom: 1px solid black;
     padding: 15px 0;
+    width: 100%;
 }
 .p-m{
-padding: 20px 0 100px;
+    padding: 20px 0 90px;
 }
-.form textarea{
-    width: 56%;
+.mensaje{
+    
+    
+    resize: none;
 }
-.logo-contacto{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.enviar{
+    margin-top: 15px;
 }
 
-.derecha-contacto{
+.botton{
+    padding: 12px 35px;
+}
+.derecha-container{
+    margin-left:90px;
+    margin-top: 47px;
+}
+.derecha-contacto h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.2;
+}
+.derecha-contacto h5{
+    font-weight: 500;
+    font-size: .95rem;
+    line-height: 2;
+}
+.logos-contacto{
+   
+    margin-top: 20px;
+}
+.img-contact{
+    height: 25px;
+    padding-right:  14px;
+    cursor: pointer;
 
 }
+@media (max-width:991px) {
+    .container-contacto{
+     padding: 100px 100px 0 ; 
+    }
+}
+@media (max-width: 767px) {
+    .container-contacto{
+    padding: 100px 75px 0 ;   
+    height: inherit;
+ }
+ .grid-contacto{
+    grid-template: 1fr 1fr / 1fr;
+}
+.derecha-container{
+    margin-left: 0;
+}
+.derecha-contacto h2{
+    font-size: 2.2rem;
+}
+.derecha-contacto h5{
+    font-size: 1.1rem;
+}
+.img-contact {
+    height: 37px;
+    padding-right: 25px;
+}
+}
+@media(max-width:425px){
+    .container-contacto{
+        padding: 100px 33px 0 ;     
+    }
+    .container-contacto h1{
+        font-size: 45px;
+    }
+}
+
 /* ------footer------ */
 footer{
     display: flex;
@@ -227,7 +496,7 @@ footer{
     height: 75px;
     color: white;
     justify-content: center;
-    align-items:center;
+    align-items: center;
    
 }
 
