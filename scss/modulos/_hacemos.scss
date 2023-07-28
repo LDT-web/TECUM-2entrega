@@ -1,0 +1,126 @@
+#hacemos{
+     .container-hacemos{
+          background-image: url(../assets/galeria/hacemos.webp);
+          height: calc(100vh + 200px);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+     .title-hacemos{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: inherit;
+         h2{color:#FFFFFF;
+          font-size: 2.7rem;
+          font-weight: 600;
+          letter-spacing: 1.1rem;
+          }
+         h2 {
+          color:#FFFFFF;
+          font-size: 2.7rem;
+          font-weight: 600;
+          letter-spacing: 1.1rem;
+          .title-h2{
+               padding: 0 71px;
+          }
+          }
+
+         h2{
+          color:#FFFFFF;
+          font-size: 2.7rem;
+          font-weight: 600;
+          letter-spacing: 1.1rem;
+          }
+          }
+     }
+}
+.box-backg{
+     background-color: #EFF0F2;
+     height: 700px;
+     .container-boxs{
+          width: calc(100% - 650px);
+          background-color: transparent;
+          margin: auto;
+          display: flex;
+          position: relative;
+          top: -55px;    
+          justify-content: center;
+       .box-shadow{
+          padding: 0 15px;
+          width: 380px;
+          height: 500px;
+          .box{
+               padding: 60px ;
+               border: 1px solid black;
+               background-color: #FFFFFF;
+         img{
+          height: 57px;
+          margin-bottom: 35px;
+         }
+         h2{
+          margin-bottom: 25px;
+          font-size: 1.5rem;
+          }
+         p{}
+    
+            }
+          }
+          .box-shadow{
+               padding: 0 15px;
+               width: 380px;
+               height: 500px;
+               .box{
+                    padding: 60px ;
+                    border: 1px solid black;
+                    background-color: #FFFFFF;
+              img{
+               height: 57px;
+               margin-bottom: 35px;
+              }
+              h2{
+               margin-bottom: 25px;
+               font-size: 1.5rem;
+               }
+              p{}
+                 }
+               }
+               .box-shadow{
+                    padding: 0 15px;
+                    width: 380px;
+                    height: 500px;
+                    .box{
+                         padding: 60px ;
+                         border: 1px solid black;
+                         background-color: #FFFFFF;
+                   img{
+                    height: 57px;
+                    margin-bottom: 35px;
+                   }
+                   h2{
+                    margin-bottom: 25px;
+                    font-size: 1.5rem;
+                    }
+                   p{}
+                      }
+                    }
+                    .box-shadow{
+                         padding: 0 15px;
+                         width: 380px;
+                         height: 500px;
+                         .box{
+                              padding: 60px ;
+                              border: 1px solid black;
+                              background-color: #FFFFFF;
+                        img{
+                         height: 57px;
+                         margin-bottom: 35px;
+                        }
+                        h2{
+                         margin-bottom: 25px;
+                         font-size: 1.5rem;
+                         }
+                        p{}
+                          }
+          }
+     }
+}

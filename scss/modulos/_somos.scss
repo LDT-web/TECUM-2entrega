@@ -1,0 +1,36 @@
+#somos{
+    .grid-somos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    .grid-img{
+        background-image: url(../assets/images/casco-100.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 1;
+        width: 100%;
+        height: inherit;
+    }
+   .grid-text{
+        padding: 130px 47px;
+        height: inherit;
+        h5{
+          font-size: 57px;
+          padding-bottom: 75px;
+        }
+        p{
+        margin-bottom: 75px;
+      }
+        a{
+            display: inline-block;
+            margin-top: 25px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 17px  17px;
+            font-size: 17px;
+        }
+        }
+    }
+}

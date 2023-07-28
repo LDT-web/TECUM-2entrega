@@ -1,0 +1,81 @@
+header{  
+        .nav{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 65px;
+            background-color: #EFF0F2;
+            padding-left: 15px;
+            padding-right: 15px;
+            .container-fluid{
+                .log_nav{
+                    width: 120px;
+                    height: 40px;
+                }
+                button{
+                    &:focus{
+                        box-shadow: none; 
+                    }
+                    .nav-icon{
+                        background-image: url(../assets/images/ham.svg);
+                    }
+                }  
+               
+              .nav-ul{
+                flex-grow: 0;
+             ul {
+                .nav-item{
+                  .a-nav{
+                        margin-left: 32px;
+                        color:black;
+                        font-weight: 500;
+                        &:hover{
+                            color:black;
+                        }
+                        }
+                    }
+              .nav-item{
+                  .a-nav {
+                        margin-left: 32px;
+                        color:black;
+                        font-weight: 500;
+                        &:hover{
+                            color:black;
+                        }
+                        }
+                      }
+              .nav-item{
+                 .a-nav {
+                        margin-left: 32px;
+                        color:black;
+                        font-weight: 500;
+                        &:hover{
+                            color:black;
+                        }
+                    }
+                 }
+             .nav-item{
+                    .a-nav {
+                         margin-left: 32px;
+                        color:black;
+                        font-weight: 500;
+                        &:hover{
+                            color:black;
+                        }   
+                    }
+                }
+              .nav-item{
+                    .a-nav {
+                         margin-left: 32px;
+                        color:black;
+                        font-weight: 500;  
+                        &:hover{
+                            color:black;
+                        }
+                    }
+                }
+            }         
+          }
+       }
+     }
+}

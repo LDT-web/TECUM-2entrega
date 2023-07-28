@@ -176,6 +176,9 @@ box-shadow: none;
     font-weight: 600;
     letter-spacing: 1.1rem;
 }
+.title-h2{
+    padding: 0 71px;
+}
 .box-backg{
     background-color: #EFF0F2;
     height: 700px;
