@@ -351,13 +351,13 @@ box-shadow: none;
     position:relative;
  }
 
- .item img{
+ .item span{
     display: block;
     padding-bottom: 84%;
  
  }
 
-.item img::before{
+.item span::before{
     content:"";
     position: absolute;
     width: 100%;
@@ -365,7 +365,7 @@ box-shadow: none;
     transform: scale(0);
     transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1);
  }
- .item img:hover::before{
+ .item span:hover::before{
     transform: scale(1);
     background-color: #111111b3;
  }
